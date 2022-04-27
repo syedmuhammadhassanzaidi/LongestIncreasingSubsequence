@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  test:
+    image: ${DOCKER_REGISTRY-}lis
+    build:
+      context: .
+      dockerfile: LIS\Dockerfile
+  
